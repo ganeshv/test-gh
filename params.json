@@ -1,6 +1,6 @@
 {
   "name": "Test-gh",
   "tagline": "Testing automatic gh-pages",
-  "body": "# test-gh\r\nTesting automatic gh-pages\r\n\r\n```js\r\nvar run = require('gentrify').run;\r\n\r\nfunction* getQuote(sym) {\r\n    /* invoke a promise-based API */\r\n    const qstr = yield rp(`https://www.google.com/finance/info?q=${sym}`),\r\n        quote = JSON.parse(qstr.slice(qstr.indexOf('[')));\r\n    return +quote[0].l_cur;\r\n}\r\n```\r\n",
+  "body": "# test-gh\r\nTesting automatic gh-pages\r\n\r\n## Section\r\n\r\nThis is a paragraph within a section.\r\n\r\n### Third level\r\n\r\n  - Point 1\r\n  - Point 2\r\n\r\n  1. Pint 1\r\n  2. Pint 2\r\n\r\n> Blockquoting is fine \r\n> When you have the time\r\n\r\n\r\n```js\r\nvar run = require('gentrify').run;\r\n\r\nfunction* getQuote(sym) {\r\n    /* invoke a promise-based API */\r\n    const qstr = yield rp(`https://www.google.com/finance/info?q=${sym}`),\r\n        quote = JSON.parse(qstr.slice(qstr.indexOf('[')));\r\n    return +quote[0].l_cur;\r\n}\r\n```\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
